@@ -5,6 +5,27 @@
 //  Created by Kasun Randika on 6/28/16.
 //  Copyright © 2016 Kasun Randika. All rights reserved.
 //
+//  The MIT License (MIT)
+//
+//  Copyright (c) 2016 Kasun Randika
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
 
 #import "DeviceTypes.h"
 #import <sys/utsname.h>
@@ -54,6 +75,12 @@
       @"iPhone9,2":    @"iPhone 7+(GSM+CDMA)",
       @"iPhone9,3":    @"iPhone 7(GSM+CDMA)",
       @"iPhone9,4":    @"iPhone 7+(GSM+CDMA)",
+      @"iPhone10,1":   @"iPhone 8(CDMA)",
+      @"iPhone10,4":   @"iPhone 8(GSM)",
+      @"iPhone10,2":   @"iPhone 8+(CDMA)",
+      @"iPhone10,5":   @"iPhone 8+(GSM)",
+      @"iPhone10,3":   @"iPhone X(CDMA)",
+      @"iPhone10,6":   @"iPhone X(GSM)",
       
       @"iPad1,1":  @"iPad",
       @"iPad2,1":  @"iPad 2(WiFi)",

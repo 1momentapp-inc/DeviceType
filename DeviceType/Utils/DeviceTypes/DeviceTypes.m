@@ -43,7 +43,7 @@
     NSString *machineName = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     
     //MARK: More official list is at
-    //http://theiphonewiki.com/wiki/Models
+    // https://www.theiphonewiki.com/wiki/Models
     //MARK: You may just return machineName. Following is for convenience
     
     NSDictionary *commonNamesDictionary =
@@ -81,7 +81,17 @@
       @"iPhone10,5":   @"iPhone 8+(GSM)",
       @"iPhone10,3":   @"iPhone X(CDMA)",
       @"iPhone10,6":   @"iPhone X(GSM)",
-      
+
+      @"iPhone11,2":   @"iPhone XS",
+      @"iPhone11,4":   @"iPhone XS Max",
+      @"iPhone11,6":   @"iPhone XS Max",
+      @"iPhone11,8":   @"iPhone XR",
+
+      @"iPhone12,1":   @"iPhone 11",
+      @"iPhone12,3":   @"iPhone 11 Pro",
+      @"iPhone12,5":   @"iPhone 11 Pro max",
+      @"iPhone12,8":   @"iPhone SE (2nd Generation)",
+
       @"iPad1,1":  @"iPad",
       @"iPad2,1":  @"iPad 2(WiFi)",
       @"iPad2,2":  @"iPad 2(GSM)",
@@ -103,7 +113,38 @@
       
       @"iPad5,3":  @"iPad Air 2 (WiFi)",
       @"iPad5,4":  @"iPad Air 2 (GSM+CDMA)",
+
+      @"iPad11,3":  @"iPad Air 3rd Gen",
+      @"iPad11,4":  @"iPad Air 3rd Gen)",
+
+      @"iPad6,3":  @"iPad Pro (9.7-inch)",
+      @"iPad6,4":  @"iPad Pro (9.7-inch)",
       
+      @"iPad6,7":  @"iPad Pro (12.9-inch)",
+      @"iPad6,8":  @"iPad Pro (12.9-inch)",
+
+      @"iPad7,1":  @"iPad Pro (12.9-inch) 2nd Gen",
+      @"iPad7,2":  @"iPad Pro (12.9-inch) 2nd Gen",
+
+      @"iPad7,3":  @"iPad Pro (10.5-inch)",
+      @"iPad7,4":  @"iPad Pro (10.5-inch)",
+
+      @"iPad8,1":  @"iPad Pro (11-inch)",
+      @"iPad8,2":  @"iPad Pro (11-inch)",
+      @"iPad8,3":  @"iPad Pro (11-inch)",
+      @"iPad8,4":  @"iPad Pro (11-inch)",
+
+      @"iPad8,5":  @"iPad Pro (12.9-inch) 3rd Gen",
+      @"iPad8,6":  @"iPad Pro (12.9-inch) 3rd Gen",
+      @"iPad8,7":  @"iPad Pro (12.9-inch) 3rd Gen",
+      @"iPad8,8":  @"iPad Pro (12.9-inch) 3rd Gen",
+      
+      @"iPad8,9":  @"iPad Pro (11-inch) 2nd Gen",
+      @"iPad8,10":  @"iPad Pro (11-inch) 2nd Gen",
+
+      @"iPad8,11":  @"iPad Pro (12.9-inch) 4th Gen",
+      @"iPad8,12":  @"iPad Pro (12.9-inch) 4th Gen",
+
       @"iPad4,4":  @"iPad Mini 2G (WiFi)",
       @"iPad4,5":  @"iPad Mini 2G (GSM)",
       @"iPad4,6":  @"iPad Mini 2G (GSM+CDMA)",
@@ -111,13 +152,20 @@
       @"iPad4,7":  @"iPad Mini 3G (WiFi)",
       @"iPad4,8":  @"iPad Mini 3G (GSM)",
       @"iPad4,9":  @"iPad Mini 3G (GSM+CDMA)",
-      
+
+      @"iPad5,1":  @"iPad Mini 4th Gen",
+      @"iPad5,2":  @"iPad Mini 4th Gen",
+
+      @"iPad11,1":  @"iPad Mini 5th Gen",
+      @"iPad11,2":  @"iPad Mini 5th Gen",
+
       @"iPod1,1":  @"iPod 1st Gen",
       @"iPod2,1":  @"iPod 2nd Gen",
       @"iPod3,1":  @"iPod 3rd Gen",
       @"iPod4,1":  @"iPod 4th Gen",
       @"iPod5,1":  @"iPod 5th Gen",
       @"iPod7,1":  @"iPod 6th Gen",
+      @"iPod9,1":  @"iPod 7th Gen",
       };
     
     NSString *deviceName = commonNamesDictionary[machineName];
@@ -129,6 +177,7 @@
     return deviceName;
 }
 
+#if 0
 /*
  * Following method identifies and categorizes the devices with the same screen size of iPhone5.
  * 1136 x 640 (727,040 total) resolution at 326 ppi, and 4 (3.48 × 1.96) inches.
@@ -252,5 +301,6 @@
 + (CGFloat)getDeviceHeight {
     return CGRectGetHeight([[UIScreen mainScreen] bounds]);
 }
+#endif
 
 @end

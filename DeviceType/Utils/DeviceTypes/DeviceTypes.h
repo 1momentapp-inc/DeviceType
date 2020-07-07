@@ -36,6 +36,8 @@
 @interface DeviceTypes : NSObject
 
 + (NSString *)deviceModelName;
+
+#if 0
 + (BOOL)isIPhone5SizedDevice;
 + (BOOL)isIPhone6SizedDevice;
 + (BOOL)isIPhone6PlusSizedDevice;
@@ -43,5 +45,5 @@
 + (NSString *)getDeviceType;
 + (CGFloat)getDeviceWidth;
 + (CGFloat)getDeviceHeight;
-
+#endif
 @end
